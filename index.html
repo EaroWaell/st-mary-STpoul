@@ -11,6 +11,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/styles.css" />
+
+  <style>
+    /* جعل بطاقة «كلمة روحية» تملأ المساحة بشكل أفضل على اللاب */
+    .spiritual-word-card {
+      width: 100%;
+      box-sizing: border-box;
+      min-height: 620px;
+      display: flex;
+      align-items: stretch;
+      padding: 2.5rem 3rem;
+    }
+
+    .spiritual-word-content {
+      width: 100%;
+      min-height: 100%;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .spiritual-word-content .welcome-quote {
+      width: 100%;
+      min-height: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 1rem;
+      line-height: 1.9;
+    }
+
+    @media (max-width: 900px) {
+      .spiritual-word-card {
+        min-height: auto;
+        padding: 1.5rem;
+      }
+
+      .spiritual-word-content .welcome-quote {
+        min-height: auto;
+      }
+    }
+  </style>
+
 </head>
 <body data-title-en="St. Mary &amp; St. Paul Church  El Hadra El Gedida" data-title-ar=" كنيسة السيدة العذراء والقديس بولس الرسول الحضره الجديده" data-desc-en="St. Mary &amp; St. Paul Church  El Hadra El Gedida official website with clergy, services, meetings, and contact information." data-desc-ar="الموقع الرسمي لكنيسة السيدة العذراء والقديس بولس الرسول ويشمل الكهنة والخدمات والاجتماعات وبيانات التواصل.">
   
@@ -77,8 +118,8 @@
       <h2 data-en="Spiritual Word" data-ar="كلمة روحية">Spiritual Word</h2>
     </div>
 
-    <div class="welcome-card reveal-up" style="justify-content:center;text-align:center">
-      <div>
+    <div class="welcome-card reveal-up spiritual-word-card" style="justify-content:center;text-align:center">
+      <div class="spiritual-word-content">
         <p class="welcome-quote" data-en="A New Year… and Renewed Grace
 
 In the name of the Father, the Son, and the Holy Spirit, One God. Amen.
@@ -252,10 +293,10 @@ With sincere gratitude and appreciation to everyone who contributes to, supports
         <img src="assets/pope-tawadros-visit.jpg" alt="Church celebration" />
       </figure>
       <figure class="gallery-card reveal-up">
-        <img src="assets/b.jpg" alt="Iconostasis dedication" />
+        <img src="assets/4.jpg" alt="Iconostasis dedication" />
       </figure>
       <figure class="gallery-card reveal-up">
-        <img src="assets/c.jpeg" alt="Community gathering at the church" />
+        <img src="assets/9.jpeg" alt="Community gathering at the church" />
       </figure>
     </div>
   
